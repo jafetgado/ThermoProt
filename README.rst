@@ -1,7 +1,7 @@
 **ThermoProt**
 ===============
 
-ThermoProt is a tool to predict the thermostability of proteins as psychrophilic, mesophilic, thermophilic, or hyperthermophilic using machine learning.
+ThermoProt is a python package to predict the thermostability of proteins as psychrophilic, mesophilic, thermophilic, or hyperthermophilic using machine learning.
 
 If you find ThermoProt helpful, please cite this paper:
 
