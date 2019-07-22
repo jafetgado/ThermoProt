@@ -14,7 +14,7 @@ Install with pip
 
    pip install ThermoProt
 
-Or from source code
+Or from source
 
 .. code:: shell-session
 
