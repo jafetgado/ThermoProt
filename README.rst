@@ -17,6 +17,7 @@ Install with pip
 Or from source code
 
 .. code:: shell-session
+
    git clone https://github.com/jafetgado/ThermoProt.git
    cd ThermoProt
    python setup.py install
