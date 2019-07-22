@@ -1,12 +1,10 @@
 **ThermoProt**
 ===============
 
-ThermoProt is a python package to predict the thermostability of proteins as psychrophilic, mesophilic, thermophilic, or hyperthermophilic using machine learning.
+ThermoProt is a python package to predict the thermostability of proteins as psychrophilic,
+mesophilic, thermophilic, or hyperthermophilic using machine learning.
 
-If you find ThermoProt helpful, please cite this paper:
 
-Gado, J.E., Beckham, G.T., Payne, C.M (2019). Predicting protein thermostability
-with machine learning.
 
 Installation
 -------------
@@ -43,6 +41,13 @@ Examples
    pred = tp.seqPred(seq, clf='MTH', probability=False)  # clf can be PM, MT, TH or MTH
 
    # Predict thermostability of sequences in fasta file and write results to spreadsheet
-   fasta_file = 'sequences.fas'
    df = tp.fastaPred(fasta='sequences.fas', clf='MTH')
    df.to_csv('predictions.csv')   # Write to spreadsheet
+
+
+Citation
+----------
+In published works, please cite the this paper:
+
+Gado, J.E., Beckham, G.T., Payne, C.M (2019). Predicting protein thermostability
+with machine learning.
