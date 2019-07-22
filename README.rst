@@ -47,7 +47,7 @@ Examples
 
 Citation
 ----------
-In published works, please cite the this paper:
+In published works, please cite this paper:
 
 Gado, J.E., Beckham, G.T., Payne, C.M (2019). Predicting protein thermostability
 with machine learning.
