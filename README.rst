@@ -58,5 +58,4 @@ Citation
 ----------
 If you find ThermoProt useful, please cite the following:
 
-Gado, J.E., 2021. "Machine learning and bioinformatic insights into key enzymes for a bio-based circular economy". DOI: 
-10.13023/etd.2021.009
+Gado, Japheth E., 2021, "Machine learning and bioinformatic insights into key enzymes for a bio-based circular economy". Theses and Dissertations: Chemical and Materials Engineering, 129. DOI: 10.13023/etd.2021.009.
