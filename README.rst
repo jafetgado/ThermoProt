@@ -56,7 +56,7 @@ Examples
 
 Citation
 ----------
-In published works, please cite this paper:
+If you find ThermoProt useful, please cite the following:
 
-Gado, J.E., Beckham, G.T., Payne, C.M (2019). Predicting protein thermostability
-with machine learning.
+Gado, J.E., 2021. "Machine learning and bioinformatic insights into key enzymes for a bio-based circular economy". DOI: 
+10.13023/etd.2021.009
