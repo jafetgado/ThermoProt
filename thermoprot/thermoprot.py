@@ -245,7 +245,7 @@ def main():
     dfpred = pd.DataFrame([headers, list(yproba), list(ypred), list(ytext)], 
                           index=['Header', 'Probability', 'Class', 'Prediction'])
     dfpred = dfpred.transpose()
-    dfpred.to_csv(args.outfile)
+    dfpred.to_csv(args.outfile, index=False)
 
 
 
