@@ -256,6 +256,4 @@ if __name__ == '__main__':
     
     main()
     
-    #conda env create -f env.yml -p ./env
-    #conda activate ./env
     
