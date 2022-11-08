@@ -1,4 +1,2 @@
-build
-dist
-ThermoProt.egg-info
-.DS_store
+**/.DS_store
+env

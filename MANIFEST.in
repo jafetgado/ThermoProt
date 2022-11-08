@@ -1,3 +1,0 @@
-include *.rst
-include thermoprot/*.py
-include thermoprot/models_data/*.pcl

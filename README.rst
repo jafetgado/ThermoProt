@@ -1,61 +1,30 @@
 **ThermoProt**
 ===============
 
-ThermoProt is a python package to predict the thermostability of proteins as psychrophilic,
-mesophilic, thermophilic, or hyperthermophilic using machine learning.
+ThermoProt is a python package to predict the thermostability of proteins.
+ThermoProt uses binary classifiers to predict the thermostability of proteins as
+	* psychrophilic vs. mesophilic (PM)
+	* mesophilic vs. thermophilic (MT)
+	* thermophilic vs. hyperthermophilic (TH)
+	* mesophilic vs. thermophlic/hyperthermophlic (MTH)
 
 
 
-Installation
+Usage 
 -------------
-Install with pip
-
-.. code:: shell-session
-
-   pip install ThermoProt
-
-Or from source
-
 .. code:: shell-session
 
    git clone https://github.com/jafetgado/ThermoProt.git
    cd ThermoProt
-   python setup.py install
+   conda env create -f ./env.yml -p ./env
+   conda activate ./env
+   python thermoprot/thermoprot.py --infile training_sequences/hyperthermophilic.fasta --outfile ./predictions.csv --modelname MTH
 
 
-
-Prerequisites
--------------
-
-1. Python 3
-2. sklearn
-3. numpy
-4. pandas
-
-Usage
------
-There are 2 main functions in thermoprot:
-
-1. seqPred: predicts the thermostability of a single protein sequence.
-2. fastaPred: predicts the thermostability of protein sequences in a fasta file and returns the predictions as a Pandas dataframe.
-
-Examples
---------
-.. code:: python
-
-   import thermoprot as tp
-
-   # Predict thermostability of a sequence
-   seq = "MVRVPRERSGTRSALGEASTYPVGAMTSQHDDQMTFYEAVGGEETFTRLA"
-   pred = tp.seqPred(seq, clf='MTH', probability=False)  # clf can be PM, MT, TH or MTH
-
-   # Predict thermostability of sequences in fasta file and write results to spreadsheet
-   df = tp.fastaPred(fasta='sequences.fas', clf='MTH')
-   df.to_csv('predictions.csv')   # Write to spreadsheet
 
 
 Citation
 ----------
 If you find ThermoProt useful, please cite the following:
 
-Gado, Japheth E., 2021, "Machine learning and bioinformatic insights into key enzymes for a bio-based circular economy". Theses and Dissertations: Chemical and Materials Engineering, 129. DOI: 10.13023/etd.2021.009.
+Erickson E, Gado JE, et al, 2022. "Sourcing thermotolerant poly(ethylene terephthalate) hydrolase scaffolds from natural diversity.
