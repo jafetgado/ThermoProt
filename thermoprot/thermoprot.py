@@ -5,8 +5,6 @@ ThermoProt: Predict the thermostability of protein sequences with machine learni
 
 
 
-
-
 import pandas as pd
 import numpy as np
 import sklearn
