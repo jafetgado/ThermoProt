@@ -237,7 +237,8 @@ def main():
     yproba = model.predict_proba(features)[:,1]
     ypred = (yproba > 0.5)
     ytext = np.array([None] * len(ypred))
-    text = {'P': 'Psychrophilic', 'M': 'Mesophilic', 'T': 'Thermophilic', 
+    text = {'P': 'Psychrophilic', 'M': 'Mesophilic', 'T': 'Thermophilic',
+            'H', 'Hyperthermophilic', 
             'TH':'Thermophilic/Hyperthermophilic'}
     ytext[~ypred] = text[args.modelname[0]] # False class
     ytext[ypred] = text[args.modelname[1:]] # True class
